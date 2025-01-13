@@ -6,6 +6,7 @@
 
 - Vue
 - Firebase
+- TypeScript
 - Pinia
 - Vuetify
 - Tailwind CSS
