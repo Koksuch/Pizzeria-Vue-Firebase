@@ -45,7 +45,7 @@ const updateMenuItem = async () => {
       isBtnLoading.value = true
       await updateDoc(doc(db, props.collectionName, selectedProduct.value.id), {
         name: selectedProduct.value.name,
-        price: selectedProduct.value.price,
+        price: Number(selectedProduct.value.price),
         currency: selectedProduct.value.currency,
         ingredients: selectedIngredients.value.map((item) => item.id),
       })
